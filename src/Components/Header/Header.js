@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <span className="header" onClick={() => window.scrollTo(0,0)} >🎞️ Hawk Eye 📽️</span>
+        <span className="header" onClick={() => window.scroll(0,0)} >🎞️ Hawk Eye 📽️</span>
     );
 };
 
