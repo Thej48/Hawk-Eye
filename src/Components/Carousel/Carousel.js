@@ -46,6 +46,7 @@ const Carousel = ({ media_type, id }) => {
 
     useEffect(() => {
         fetchCredits();
+        // eslint-disable-next-line
     }, []);
 
 
