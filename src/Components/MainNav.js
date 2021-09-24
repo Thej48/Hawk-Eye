@@ -19,8 +19,10 @@ const useStyles = makeStyles({
         backgroundColor: 'gray',
         bottom: 0,
         zIndex: 100,
-
     },
+    "& .Mui-selected": {
+      color: "#fff"
+    }
 });
 
 export default function SimpleBottomNavigation() {
