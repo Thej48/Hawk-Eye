@@ -21,14 +21,35 @@ const useStyles = makeStyles({
         backgroundColor: 'gray',
         bottom: 0,
         zIndex: 100,
+        '& .MuiBottomNavigationAction-root': {
+      // color: 'black',
+      backgroundColor: '#808080',
+    },
+    '& .Mui-selected': {
+      color: 'white',
+    },
     }
 });
+
+// const useStyles = makeStyles(() => ({
+//   root: {
+//     // width: '100%',
+//     '& .MuiBottomNavigationAction-root': {
+//       // color: 'black',
+//       backgroundColor: '#808080',
+//     },
+//     '& .Mui-selected': {
+//       color: 'white',
+//     },
+//   },
+// }));
 
 
 
 
 export default function SimpleBottomNavigation() {
     const classes = useStyles();
+//       const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const history = useHistory();
 
@@ -51,6 +72,7 @@ export default function SimpleBottomNavigation() {
                     setValue(newValue);
                 }}
                 showLabels
+//                 className={classes.root}
                 className={classes.root}
             >
                 <BottomNavigationAction   label="Trending" icon={<WhatshotIcon />} />
