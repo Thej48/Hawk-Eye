@@ -42,7 +42,7 @@ const classes = useStyles();
             marginTop: 10,
         }}
         >
-            <Pagination count={numOfPages} size="medium" color="primary" variant="outlined" shape="round" onChange={(e) => handlePageChange(e.target.textContent) } hideNextButton hidePrevButton/>
+            <Pagination count={numOfPages} classes={{ ul: classes.ul }} size="medium" color="primary" variant="outlined" shape="round" onChange={(e) => handlePageChange(e.target.textContent) } hideNextButton hidePrevButton/>
         </div>
     );
 
