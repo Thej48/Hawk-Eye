@@ -18,7 +18,7 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
             marginTop: 10,
         }}
         >
-            <Pagination count={numOfPages} size="medium" variant="outlined" shape="round" onChange={(e) => handlePageChange(e.target.textContent) } hideNextButton hidePrevButton/>
+            <Pagination count={numOfPages} size="medium" color="primary" variant="outlined" shape="round" onChange={(e) => handlePageChange(e.target.textContent) } hideNextButton hidePrevButton/>
         </div>
     );
 };
