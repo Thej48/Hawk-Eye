@@ -29,7 +29,7 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
     
 };
 
-export default function CustomPagination() {
+export default function CustomPagination {
 
 const classes = useStyles();
     
