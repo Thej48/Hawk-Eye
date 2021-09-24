@@ -22,6 +22,10 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
     },
     "& .Mui-selected":{
       backgroundColor: "black",
+    },
+      "& .MuiPaginationItem-ellipsis":{
+      border: "none",
+      fontSize: "4.5vw",
     }
   }
 }));
