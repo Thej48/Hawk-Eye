@@ -25,13 +25,10 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
     }
   }
 }));
+    
+    const classes = useStyles();
 
     
-};
-
-export default function CustomPagination 
-
-const classes = useStyles();
     
     return (
         <div
@@ -45,6 +42,14 @@ const classes = useStyles();
             <Pagination count={numOfPages} classes={{ ul: classes.ul }} size="medium" color="primary" variant="outlined" shape="round" onChange={(e) => handlePageChange(e.target.textContent) } hideNextButton hidePrevButton/>
         </div>
     );
+
+    
+};
+
+export default CustomPagination;
+
+    
+    
 
 
 
