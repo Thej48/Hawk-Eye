@@ -8,25 +8,40 @@ import SearchIcon from '@mui/icons-material/Search';
 import MovieIcon from '@mui/icons-material/Movie';
 import TvIcon from '@mui/icons-material/Tv';
 
-import { makeStyles } from '@material-ui/styles';
+// import { makeStyles } from '@material-ui/styles';
 import { useEffect } from 'react';
 import { useHistory } from 'react-router';
 
-const useStyles = makeStyles({
-    root: {
-        width: "100%",
-        position: "fixed",
-        backgroundColor: 'gray',
-        bottom: 0,
-        zIndex: 100,
-    },
-    "& .Mui-selected": {
-      backgroundColor: "white",
-    },
-});
+import { withStyles } from '@material-ui/core';
 
-export default function SimpleBottomNavigation() {
-    const classes = useStyles();
+
+// const useStyles = makeStyles({
+//     root: {
+//         width: "100%",
+//         position: "fixed",
+//         backgroundColor: 'gray',
+//         bottom: 0,
+//         zIndex: 100,
+//     },
+//     "& .Mui-selected": {
+//       backgroundColor: "white",
+//     },
+// });
+
+
+const styles = {
+  root: {
+    color: "gray",
+    "&$selected": {
+      color: "white"
+    }
+  },
+  selected: {}
+};
+
+export default function withStyles(styles) SimpleBottomNavigation() {
+    const actionClasses = this.props.classes;
+//     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const history = useHistory();
 
@@ -51,10 +66,10 @@ export default function SimpleBottomNavigation() {
                 showLabels
                 className={classes.root}
             >
-                <BottomNavigationAction label="Trending" icon={<WhatshotIcon />} />
-                <BottomNavigationAction label="Movies" icon={<MovieIcon />} />
-                <BottomNavigationAction label="TV Series" icon={<TvIcon />} />
-                <BottomNavigationAction label="Search" icon={<SearchIcon />} />
+                <BottomNavigationAction  classes={actionClasses} label="Trending" icon={<WhatshotIcon />} />
+                <BottomNavigationAction  classes={actionClasses} label="Movies" icon={<MovieIcon />} />
+                <BottomNavigationAction  classes={actionClasses} label="TV Series" icon={<TvIcon />} />
+                <BottomNavigationAction  classes={actionClasses} label="Search" icon={<SearchIcon />} />
             </BottomNavigation>
         </Box>
     );
