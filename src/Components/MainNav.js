@@ -20,6 +20,7 @@ const useStyles = makeStyles({
         position: "fixed",
         backgroundColor: 'gray',
         bottom: 0,
+        justifyContent: 'space-evenly',
         zIndex: 100,
         '& .MuiBottomNavigationAction-root': {
       // color: 'black',
