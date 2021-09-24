@@ -49,10 +49,10 @@ export default function SimpleBottomNavigation() {
                 showLabels
                 className={classes.root}
             >
-                <BottomNavigationAction label="Trending" icon={<WhatshotIcon />} />
-                <BottomNavigationAction label="Movies" icon={<MovieIcon />} />
-                <BottomNavigationAction label="TV Series" icon={<TvIcon />} />
-                <BottomNavigationAction label="Search" icon={<SearchIcon />} />
+                <BottomNavigationAction style={{ color: "white" }} label="Trending" icon={<WhatshotIcon />} />
+                <BottomNavigationAction style={{ color: "white" }} label="Movies" icon={<MovieIcon />} />
+                <BottomNavigationAction style={{ color: "white" }} label="TV Series" icon={<TvIcon />} />
+                <BottomNavigationAction style={{ color: "white" }} label="Search" icon={<SearchIcon />} />
             </BottomNavigation>
         </Box>
     );
