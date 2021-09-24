@@ -25,7 +25,7 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
     },
       "& .MuiPaginationItem-ellipsis":{
       border: "none",
-      fontSize: "4.5vw",
+      fontSize: "x-large",
     }
   }
 }));
