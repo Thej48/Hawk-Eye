@@ -9,9 +9,13 @@ import Movies from './Pages/Movies/Movies';
 import Series from './Pages/Series/Series';
 import Search from './Pages/Search/Search';
 
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+
+
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
 
       <Header />
       <div className="App">
